@@ -259,7 +259,7 @@ CATextLayer *textLayerForLastTappedLayer;
 
 #pragma mark - CRITICAL: this method makes Apple render SVGs in sharp focus
 
--(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)finalScale
+-(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)finalScale
 {
 	/** NB: very important! The "finalScale" parameter to this method is SLIGHTLY DIFFERENT from the scale that Apple reports in the other delegate methods
 	 
